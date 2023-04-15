@@ -224,6 +224,7 @@ import de from '@baserow/modules/database/locales/de.json'
 import es from '@baserow/modules/database/locales/es.json'
 import it from '@baserow/modules/database/locales/it.json'
 import pl from '@baserow/modules/database/locales/pl.json'
+import ja from '@baserow/modules/database/locales/ja.json'
 
 export default (context) => {
   const { store, app, isDev } = context
@@ -238,6 +239,7 @@ export default (context) => {
     i18n.mergeLocaleMessage('es', es)
     i18n.mergeLocaleMessage('it', it)
     i18n.mergeLocaleMessage('pl', pl)
+    i18n.mergeLocaleMessage('ja', ja)
   }
 
   store.registerModule('table', tableStore)

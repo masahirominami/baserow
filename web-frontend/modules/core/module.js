@@ -11,6 +11,7 @@ import de from './locales/de.json'
 import es from './locales/es.json'
 import it from './locales/it.json'
 import pl from './locales/pl.json'
+import ja from './locales/ja.json'
 
 export default function CoreModule(options) {
   /**
@@ -125,6 +126,7 @@ export default function CoreModule(options) {
     { code: 'es', name: 'Español', file: 'es.json' },
     { code: 'it', name: 'Italiano', file: 'it.json' },
     { code: 'pl', name: 'Polski (Beta)', file: 'pl.json' },
+    { code: 'ja', name: 'Japanese (Tesing)', file: 'ja.json' },
   ]
 
   this.requireModule([
@@ -146,7 +148,7 @@ export default function CoreModule(options) {
   ])
 
   this.nuxt.hook('i18n:extend-messages', function (additionalMessages) {
-    additionalMessages.push({ en, fr, nl, de, es, it, pl })
+    additionalMessages.push({ en, fr, nl, de, es, it, pl, ja })
   })
 
   // Serve the static directory

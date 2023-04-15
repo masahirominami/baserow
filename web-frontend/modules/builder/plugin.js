@@ -5,6 +5,7 @@ import de from '@baserow/modules/builder/locales/de.json'
 import es from '@baserow/modules/builder/locales/es.json'
 import it from '@baserow/modules/builder/locales/it.json'
 import pl from '@baserow/modules/builder/locales/pl.json'
+import ja from '@baserow/modules/builder/locales/ja.json'
 import {
   IntegrationsBuilderSettingsType,
   ThemeBuilderSettingsType,
@@ -51,6 +52,7 @@ export default (context) => {
     i18n.mergeLocaleMessage('es', es)
     i18n.mergeLocaleMessage('it', it)
     i18n.mergeLocaleMessage('pl', pl)
+    i18n.mergeLocaleMessage('ja', ja)
   }
 
   registerRealtimeEvents(app.$realtime)
